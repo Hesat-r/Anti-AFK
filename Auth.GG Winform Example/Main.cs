@@ -67,7 +67,7 @@ namespace Auth.GG_Winform_Example
                     Type = NotificationType.Error
                 });
                 
-                return;
+               // return;
 
             }
 
@@ -107,20 +107,40 @@ namespace Auth.GG_Winform_Example
                 Message = "Programm Wurde Erfolgreich Gestartet!",
                 Type = NotificationType.Success
             });
-            await Task.Delay(3000);
+            await Task.Delay(2000);
 
+
+            if (siticoneCheckBox1.Checked == false && siticoneCheckBox2.Checked == false &&
+                siticoneCheckBox3.Checked == false && siticoneCheckBox4.Checked == false &&
+                siticoneCheckBox5.Checked == false)
+            {
+                notificationManager.Show(new NotificationContent
+                {
+                    Title = "Keine Optionen Ausgewählt",
+                    Message = "Du Hast keine Operatoren Ausgewählt, du musst Mindestens 1 Operator Auswählen",
+                    Type = NotificationType.Error
+                });
+                return;
+            }
 
             if (siticoneCheckBox1.Checked == true)
             {
                 for (int i = Sortieren; i > 0; i--)
                 {
                     richTextBox1.Text += "[" + DateTime.Now.ToShortTimeString() + "] " + i + " Geld wird Sortiert\r\n";
-
+                    notificationManager.Show(new NotificationContent
+                    {
+                        Title = "Sortieren",
+                        Message = "Du musst noch " + i + " Schwarzgeld Sortieren",
+                        Type = NotificationType.Success
+                    });
                     await Task.Delay(1200);
                     simulator.Keyboard.KeyDown(VirtualKeyCode.VK_E);
                     await Task.Delay(5000);
                     simulator.Keyboard.KeyUp(VirtualKeyCode.VK_E);
                     await Task.Delay(20500);
+
+                   
                 }
                 
             }else if(siticoneCheckBox1.Checked == false){
@@ -134,6 +154,13 @@ namespace Auth.GG_Winform_Example
 
             if (siticoneCheckBox2.Checked == true)
             {
+                notificationManager.Show(new NotificationContent
+                {
+                    Title = "Schneiden",
+                    Message = "Du Gehst zum Schneiden",
+                    Type = NotificationType.Success
+                });
+
                 simulator.Mouse.MoveMouseToPositionOnVirtualDesktop(200, 0);
                 await Task.Delay(100);
                 simulator.Mouse.MoveMouseToPositionOnVirtualDesktop(210, 0);
@@ -177,7 +204,10 @@ namespace Auth.GG_Winform_Example
                 simulator.Keyboard.KeyDown(VirtualKeyCode.VK_S);
                 await Task.Delay(700);
                 simulator.Keyboard.KeyUp(VirtualKeyCode.VK_S);
-            }else if (siticoneCheckBox2.Checked == false)
+
+             
+            }
+            else if (siticoneCheckBox2.Checked == false)
             {
                 notificationManager.Show(new NotificationContent
                 {
@@ -192,12 +222,20 @@ namespace Auth.GG_Winform_Example
                 for (int i = schneiden; i > 0; i--)
                 {
 
+                    notificationManager.Show(new NotificationContent
+                    {
+                        Title = "Schneiden",
+                        Message = "Du musst noch " + i + " Schwarzgeld Geschnitten",
+                        Type = NotificationType.Warning
+                    });
                     richTextBox1.Text += "[" + DateTime.Now.ToShortTimeString() + "] " + i + " Geld wird Sortiert\r\n";
                     await Task.Delay(1000);
                     simulator.Keyboard.KeyDown(VirtualKeyCode.VK_E);
                     await Task.Delay(1000);
                     simulator.Keyboard.KeyUp(VirtualKeyCode.VK_E);
                     await Task.Delay(45500);
+
+                    
 
                 }
             }else if (siticoneCheckBox3.Checked == false)
@@ -212,6 +250,13 @@ namespace Auth.GG_Winform_Example
 
             if (siticoneCheckBox4.Checked == true)
             {
+                notificationManager.Show(new NotificationContent
+                {
+                    Title = "Gehen",
+                    Message = "Du Gehst zum Waschen",
+                    Type = NotificationType.Success
+                });
+
                 simulator.Mouse.MoveMouseToPositionOnVirtualDesktop(200, 0);
                 await Task.Delay(100);
                 simulator.Mouse.MoveMouseToPositionOnVirtualDesktop(210, 0);
@@ -247,7 +292,11 @@ namespace Auth.GG_Winform_Example
                 simulator.Keyboard.KeyDown(VirtualKeyCode.VK_W);
                 await Task.Delay(1200);
                 simulator.Keyboard.KeyUp(VirtualKeyCode.VK_W);
-            }else if (siticoneCheckBox4.Checked == false)
+
+               
+
+            }
+            else if (siticoneCheckBox4.Checked == false)
             {
                 notificationManager.Show(new NotificationContent
                 {
@@ -262,6 +311,13 @@ namespace Auth.GG_Winform_Example
                 for (int i = waschen; i > 0; i--)
                 {
 
+                    notificationManager.Show(new NotificationContent
+                    {
+                        Title = "Waschen",
+                        Message = "Du musst noch " + i + " Schwarzgeld Waschen",
+                        Type = NotificationType.Warning
+                    });
+
                     richTextBox1.Text += "[" + DateTime.Now.ToShortTimeString() + "] " + i + " Geld wird Gewaschen\r\n";
 
                     await Task.Delay(1000);
@@ -269,6 +325,9 @@ namespace Auth.GG_Winform_Example
                     await Task.Delay(1000);
                     simulator.Keyboard.KeyUp(VirtualKeyCode.VK_E);
                     await Task.Delay(45500);
+
+
+                   
 
                 }
             }else if (siticoneCheckBox5.Checked == false)
@@ -299,44 +358,28 @@ namespace Auth.GG_Winform_Example
         {
 
             Environment.Exit(0);
+            
         }
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
-            Thread.ResetAbort();
+            
             Task.WaitAll();
-            Task.FromCanceled(CancellationToken.None);
-          
-        }
-
-        bool focus = false;
-        private void Form1_Paint(object sender, PaintEventArgs e)
-        {
-            if (focus)
+            var notificationManager = new NotificationManager();
+            notificationManager.Show(new NotificationContent
             {
-                richTextBox1.BorderStyle = BorderStyle.None;
-                Pen p = new Pen(Color.FromArgb(255, 62, 120, 138));
-                Graphics g = e.Graphics;
-                int variance = 3;
-                g.DrawRectangle(p, new Rectangle(richTextBox1.Location.X - variance, richTextBox1.Location.Y - variance, richTextBox1.Width + variance, richTextBox1.Height + variance));
-            }
-            else
-            {
-                richTextBox1.BorderStyle = BorderStyle.FixedSingle;
-            }
-        }
+                Title = "IN ARBEIT",
+                Message = "STOPP BUTTON IST IN ARBEIT",
+                Type = NotificationType.Information
+            });
+            
 
-        private void richTextBox1_Enter(object sender, EventArgs e)
-        {
-            focus = true;
-            this.Refresh();
-        }
+            
 
-        private void richTextBox1_Leave(object sender, EventArgs e)
-        {
-            focus = false;
-            this.Refresh();
         }
+        
+
+ 
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -351,6 +394,14 @@ namespace Auth.GG_Winform_Example
         private void button5_Click(object sender, EventArgs e)
         {
             openchildForm(new Afk());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Main main = new Main();
+            main.Show();
+            this.Close();
+
         }
     }
 }

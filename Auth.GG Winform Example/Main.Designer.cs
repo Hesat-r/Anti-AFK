@@ -20,6 +20,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.siticoneCheckBox5 = new Siticone.UI.WinForms.SiticoneCheckBox();
+            this.siticoneCheckBox4 = new Siticone.UI.WinForms.SiticoneCheckBox();
+            this.siticoneCheckBox3 = new Siticone.UI.WinForms.SiticoneCheckBox();
+            this.siticoneCheckBox2 = new Siticone.UI.WinForms.SiticoneCheckBox();
+            this.siticoneCheckBox1 = new Siticone.UI.WinForms.SiticoneCheckBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -34,12 +40,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.siticoneCheckBox1 = new Siticone.UI.WinForms.SiticoneCheckBox();
-            this.siticoneCheckBox2 = new Siticone.UI.WinForms.SiticoneCheckBox();
-            this.siticoneCheckBox3 = new Siticone.UI.WinForms.SiticoneCheckBox();
-            this.siticoneCheckBox4 = new Siticone.UI.WinForms.SiticoneCheckBox();
-            this.siticoneCheckBox5 = new Siticone.UI.WinForms.SiticoneCheckBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -87,6 +87,113 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(627, 446);
             this.panel2.TabIndex = 4;
+            // 
+            // siticoneCheckBox5
+            // 
+            this.siticoneCheckBox5.AutoSize = true;
+            this.siticoneCheckBox5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneCheckBox5.CheckedState.BorderRadius = 2;
+            this.siticoneCheckBox5.CheckedState.BorderThickness = 0;
+            this.siticoneCheckBox5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneCheckBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.siticoneCheckBox5.Location = new System.Drawing.Point(496, 9);
+            this.siticoneCheckBox5.Name = "siticoneCheckBox5";
+            this.siticoneCheckBox5.Size = new System.Drawing.Size(72, 17);
+            this.siticoneCheckBox5.TabIndex = 20;
+            this.siticoneCheckBox5.Text = "Waschen";
+            this.siticoneCheckBox5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.siticoneCheckBox5.UncheckedState.BorderRadius = 2;
+            this.siticoneCheckBox5.UncheckedState.BorderThickness = 0;
+            this.siticoneCheckBox5.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.siticoneCheckBox5.UseVisualStyleBackColor = true;
+            // 
+            // siticoneCheckBox4
+            // 
+            this.siticoneCheckBox4.AutoSize = true;
+            this.siticoneCheckBox4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneCheckBox4.CheckedState.BorderRadius = 2;
+            this.siticoneCheckBox4.CheckedState.BorderThickness = 0;
+            this.siticoneCheckBox4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneCheckBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.siticoneCheckBox4.Location = new System.Drawing.Point(379, 9);
+            this.siticoneCheckBox4.Name = "siticoneCheckBox4";
+            this.siticoneCheckBox4.Size = new System.Drawing.Size(111, 17);
+            this.siticoneCheckBox4.TabIndex = 19;
+            this.siticoneCheckBox4.Text = "GeheZuWaschen";
+            this.siticoneCheckBox4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.siticoneCheckBox4.UncheckedState.BorderRadius = 2;
+            this.siticoneCheckBox4.UncheckedState.BorderThickness = 0;
+            this.siticoneCheckBox4.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.siticoneCheckBox4.UseVisualStyleBackColor = true;
+            // 
+            // siticoneCheckBox3
+            // 
+            this.siticoneCheckBox3.AutoSize = true;
+            this.siticoneCheckBox3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneCheckBox3.CheckedState.BorderRadius = 2;
+            this.siticoneCheckBox3.CheckedState.BorderThickness = 0;
+            this.siticoneCheckBox3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneCheckBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.siticoneCheckBox3.Location = new System.Drawing.Point(284, 9);
+            this.siticoneCheckBox3.Name = "siticoneCheckBox3";
+            this.siticoneCheckBox3.Size = new System.Drawing.Size(77, 17);
+            this.siticoneCheckBox3.TabIndex = 18;
+            this.siticoneCheckBox3.Text = "Schneiden";
+            this.siticoneCheckBox3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.siticoneCheckBox3.UncheckedState.BorderRadius = 2;
+            this.siticoneCheckBox3.UncheckedState.BorderThickness = 0;
+            this.siticoneCheckBox3.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.siticoneCheckBox3.UseVisualStyleBackColor = true;
+            // 
+            // siticoneCheckBox2
+            // 
+            this.siticoneCheckBox2.AutoSize = true;
+            this.siticoneCheckBox2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneCheckBox2.CheckedState.BorderRadius = 2;
+            this.siticoneCheckBox2.CheckedState.BorderThickness = 0;
+            this.siticoneCheckBox2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneCheckBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.siticoneCheckBox2.Location = new System.Drawing.Point(149, 9);
+            this.siticoneCheckBox2.Name = "siticoneCheckBox2";
+            this.siticoneCheckBox2.Size = new System.Drawing.Size(116, 17);
+            this.siticoneCheckBox2.TabIndex = 17;
+            this.siticoneCheckBox2.Text = "GeheZuSchneiden";
+            this.siticoneCheckBox2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.siticoneCheckBox2.UncheckedState.BorderRadius = 2;
+            this.siticoneCheckBox2.UncheckedState.BorderThickness = 0;
+            this.siticoneCheckBox2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.siticoneCheckBox2.UseVisualStyleBackColor = true;
+            // 
+            // siticoneCheckBox1
+            // 
+            this.siticoneCheckBox1.AutoSize = true;
+            this.siticoneCheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneCheckBox1.CheckedState.BorderRadius = 2;
+            this.siticoneCheckBox1.CheckedState.BorderThickness = 0;
+            this.siticoneCheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneCheckBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.siticoneCheckBox1.Location = new System.Drawing.Point(51, 9);
+            this.siticoneCheckBox1.Name = "siticoneCheckBox1";
+            this.siticoneCheckBox1.Size = new System.Drawing.Size(68, 17);
+            this.siticoneCheckBox1.TabIndex = 16;
+            this.siticoneCheckBox1.Text = "Sortieren";
+            this.siticoneCheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.siticoneCheckBox1.UncheckedState.BorderRadius = 2;
+            this.siticoneCheckBox1.UncheckedState.BorderThickness = 0;
+            this.siticoneCheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.siticoneCheckBox1.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.richTextBox1.Location = new System.Drawing.Point(51, 50);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(300, 254);
+            this.richTextBox1.TabIndex = 15;
+            this.richTextBox1.Text = "";
             // 
             // label6
             // 
@@ -233,6 +340,7 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button5
             // 
@@ -291,113 +399,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(166, 519);
             this.panel1.TabIndex = 3;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.richTextBox1.Location = new System.Drawing.Point(51, 50);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(300, 254);
-            this.richTextBox1.TabIndex = 15;
-            this.richTextBox1.Text = "";
-            // 
-            // siticoneCheckBox1
-            // 
-            this.siticoneCheckBox1.AutoSize = true;
-            this.siticoneCheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneCheckBox1.CheckedState.BorderRadius = 2;
-            this.siticoneCheckBox1.CheckedState.BorderThickness = 0;
-            this.siticoneCheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneCheckBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.siticoneCheckBox1.Location = new System.Drawing.Point(51, 9);
-            this.siticoneCheckBox1.Name = "siticoneCheckBox1";
-            this.siticoneCheckBox1.Size = new System.Drawing.Size(68, 17);
-            this.siticoneCheckBox1.TabIndex = 16;
-            this.siticoneCheckBox1.Text = "Sortieren";
-            this.siticoneCheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.siticoneCheckBox1.UncheckedState.BorderRadius = 2;
-            this.siticoneCheckBox1.UncheckedState.BorderThickness = 0;
-            this.siticoneCheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.siticoneCheckBox1.UseVisualStyleBackColor = true;
-            // 
-            // siticoneCheckBox2
-            // 
-            this.siticoneCheckBox2.AutoSize = true;
-            this.siticoneCheckBox2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneCheckBox2.CheckedState.BorderRadius = 2;
-            this.siticoneCheckBox2.CheckedState.BorderThickness = 0;
-            this.siticoneCheckBox2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneCheckBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.siticoneCheckBox2.Location = new System.Drawing.Point(149, 9);
-            this.siticoneCheckBox2.Name = "siticoneCheckBox2";
-            this.siticoneCheckBox2.Size = new System.Drawing.Size(116, 17);
-            this.siticoneCheckBox2.TabIndex = 17;
-            this.siticoneCheckBox2.Text = "GeheZuSchneiden";
-            this.siticoneCheckBox2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.siticoneCheckBox2.UncheckedState.BorderRadius = 2;
-            this.siticoneCheckBox2.UncheckedState.BorderThickness = 0;
-            this.siticoneCheckBox2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.siticoneCheckBox2.UseVisualStyleBackColor = true;
-            // 
-            // siticoneCheckBox3
-            // 
-            this.siticoneCheckBox3.AutoSize = true;
-            this.siticoneCheckBox3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneCheckBox3.CheckedState.BorderRadius = 2;
-            this.siticoneCheckBox3.CheckedState.BorderThickness = 0;
-            this.siticoneCheckBox3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneCheckBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.siticoneCheckBox3.Location = new System.Drawing.Point(284, 9);
-            this.siticoneCheckBox3.Name = "siticoneCheckBox3";
-            this.siticoneCheckBox3.Size = new System.Drawing.Size(77, 17);
-            this.siticoneCheckBox3.TabIndex = 18;
-            this.siticoneCheckBox3.Text = "Schneiden";
-            this.siticoneCheckBox3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.siticoneCheckBox3.UncheckedState.BorderRadius = 2;
-            this.siticoneCheckBox3.UncheckedState.BorderThickness = 0;
-            this.siticoneCheckBox3.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.siticoneCheckBox3.UseVisualStyleBackColor = true;
-            // 
-            // siticoneCheckBox4
-            // 
-            this.siticoneCheckBox4.AutoSize = true;
-            this.siticoneCheckBox4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneCheckBox4.CheckedState.BorderRadius = 2;
-            this.siticoneCheckBox4.CheckedState.BorderThickness = 0;
-            this.siticoneCheckBox4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneCheckBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.siticoneCheckBox4.Location = new System.Drawing.Point(379, 9);
-            this.siticoneCheckBox4.Name = "siticoneCheckBox4";
-            this.siticoneCheckBox4.Size = new System.Drawing.Size(111, 17);
-            this.siticoneCheckBox4.TabIndex = 19;
-            this.siticoneCheckBox4.Text = "GeheZuWaschen";
-            this.siticoneCheckBox4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.siticoneCheckBox4.UncheckedState.BorderRadius = 2;
-            this.siticoneCheckBox4.UncheckedState.BorderThickness = 0;
-            this.siticoneCheckBox4.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.siticoneCheckBox4.UseVisualStyleBackColor = true;
-            // 
-            // siticoneCheckBox5
-            // 
-            this.siticoneCheckBox5.AutoSize = true;
-            this.siticoneCheckBox5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneCheckBox5.CheckedState.BorderRadius = 2;
-            this.siticoneCheckBox5.CheckedState.BorderThickness = 0;
-            this.siticoneCheckBox5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneCheckBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.siticoneCheckBox5.Location = new System.Drawing.Point(496, 9);
-            this.siticoneCheckBox5.Name = "siticoneCheckBox5";
-            this.siticoneCheckBox5.Size = new System.Drawing.Size(72, 17);
-            this.siticoneCheckBox5.TabIndex = 20;
-            this.siticoneCheckBox5.Text = "Waschen";
-            this.siticoneCheckBox5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.siticoneCheckBox5.UncheckedState.BorderRadius = 2;
-            this.siticoneCheckBox5.UncheckedState.BorderThickness = 0;
-            this.siticoneCheckBox5.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.siticoneCheckBox5.UseVisualStyleBackColor = true;
             // 
             // Main
             // 

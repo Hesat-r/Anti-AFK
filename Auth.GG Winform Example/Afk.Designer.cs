@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Afk));
             this.siticoneGradientButton1 = new Siticone.UI.WinForms.SiticoneGradientButton();
             this.SuspendLayout();
             // 
@@ -56,6 +57,7 @@
             this.ClientSize = new System.Drawing.Size(627, 446);
             this.Controls.Add(this.siticoneGradientButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Afk";
             this.Text = "Afk";
             this.ResumeLayout(false);

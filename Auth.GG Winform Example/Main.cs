@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Runtime.InteropServices;
@@ -9,6 +10,9 @@ using System.Windows.Forms.VisualStyles;
 using WindowsInput;
 using WindowsInput.Native;
 using Notifications.Wpf;
+using System.Net;
+using System.Net.Mail;
+using System.Text;
 
 
 namespace Auth.GG_Winform_Example
@@ -67,7 +71,7 @@ namespace Auth.GG_Winform_Example
                     Type = NotificationType.Error
                 });
                 
-               // return;
+             //   return;
 
             }
 
@@ -107,7 +111,7 @@ namespace Auth.GG_Winform_Example
                 Message = "Programm Wurde Erfolgreich Gestartet!",
                 Type = NotificationType.Success
             });
-            await Task.Delay(2000);
+            await Task.Delay(3000);
 
 
             if (siticoneCheckBox1.Checked == false && siticoneCheckBox2.Checked == false &&
@@ -128,16 +132,17 @@ namespace Auth.GG_Winform_Example
                 for (int i = Sortieren; i > 0; i--)
                 {
                     richTextBox1.Text += "[" + DateTime.Now.ToShortTimeString() + "] " + i + " Geld wird Sortiert\r\n";
+                   
+                    await Task.Delay(1200);
+                    simulator.Keyboard.KeyDown(VirtualKeyCode.VK_E);
+                    await Task.Delay(5000);
+                    simulator.Keyboard.KeyUp(VirtualKeyCode.VK_E);
                     notificationManager.Show(new NotificationContent
                     {
                         Title = "Sortieren",
                         Message = "Du musst noch " + i + " Schwarzgeld Sortieren",
                         Type = NotificationType.Success
                     });
-                    await Task.Delay(1200);
-                    simulator.Keyboard.KeyDown(VirtualKeyCode.VK_E);
-                    await Task.Delay(5000);
-                    simulator.Keyboard.KeyUp(VirtualKeyCode.VK_E);
                     await Task.Delay(20500);
 
                    
@@ -351,9 +356,73 @@ namespace Auth.GG_Winform_Example
                 Message = "Geld Erfolgreich Gewaschne Zahle Das Geld in einer Bank Ein",
                 Type = NotificationType.Success
             });
+            if (siticoneCheckBox6.Checked == true)
+            {
+                NetworkCredential login;
+                SmtpClient client;
+                MailMessage msg;
 
+                login = new NetworkCredential("hesat.steam", "Tonicati1");
+                client = new SmtpClient("smtp.gmail.com");
+                client.Port = 587;
+                client.EnableSsl = true;
+                client.Credentials = login;
+                msg = new MailMessage { From = new MailAddress("hesat.steam" + "@gmail.com", "GhostHands", Encoding.UTF8) };
+                msg.To.Add(new MailAddress(bunifuMetroTextbox2.Text));
+
+                msg.Subject = "Erfolgreich Gewaschen";
+                msg.Body = "Programm wurde am " + DateTime.Now.ToShortDateString() + " um "+ DateTime.Now.Hour + ":"+ DateTime.Now.Minute + ":" + DateTime.Now.Second + ":" + DateTime.Now.Millisecond +  " Erfolgreich Beendet Vergiss nicht das geld einzuzahlen";
+                msg.BodyEncoding = Encoding.UTF8;
+                msg.IsBodyHtml = true;
+                msg.Priority = MailPriority.Normal;
+                msg.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+                client.SendCompleted += new SendCompletedEventHandler(SendCompletedCallBack);
+                string userstate = "Sending...";
+                client.SendAsync(msg, userstate);
+            }
+            else
+            {
+                notificationManager.Show(new NotificationContent
+                {
+                    Title = "Email",
+                    Message = "Du wirst keine Email Erhalten",
+                    Type = NotificationType.Information
+                });
+            }
+           
         }
 
+        private static void SendCompletedCallBack(object sender, AsyncCompletedEventArgs e)
+        {
+            var notificationManager = new NotificationManager();
+            if (e.Cancelled)
+                notificationManager.Show(new NotificationContent
+                {
+                    Title = "Email",
+                    Message = string.Format("{0} senden abgerochen.", e.UserState),
+                    Type = NotificationType.Information
+                });
+          
+            if(e.Error != null){
+                notificationManager.Show(new NotificationContent
+                {
+                    Title = "Email",
+                    Message = string.Format("{0} {1}", e.UserState, e.Error),
+                    Type = NotificationType.Information
+                });
+               
+            }
+            else
+            {
+                notificationManager.Show(new NotificationContent
+                {
+                    Title = "Email",
+                    Message = "Erfolgreich Gesendet",
+                    Type = NotificationType.Success
+                });
+            }
+             
+        }
         private void button4_Click(object sender, EventArgs e)
         {
 
@@ -383,7 +452,7 @@ namespace Auth.GG_Winform_Example
 
         private void button2_Click(object sender, EventArgs e)
         {
-            openchildForm(new Koks());
+            openchildForm(new Meth());
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -123,39 +123,116 @@
   <metadata name="siticoneTransition1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>214, 17</value>
   </metadata>
-  <data name="animation10.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation1.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="animation10.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation1.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="animation10.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation1.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="animation10.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation1.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="animation10.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation1.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAMMOAADDDgAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPz8/5T8/P///Pz///z8///8/P///Pz///z8
+        ///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz///z8/+f///8aAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/Pz/rPz8///8/P///Pz///z8
+        ///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz///v7/0QAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD9/f9u/Pz///z8
+        ///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz///z8///8/P//+/v/RAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPn5
+        /y78/P///Pz///z8///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz///z8
+        ///7+/9EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA////Afz8/+v8/P///Pz///z8///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz///z8
+        ///8/P///Pz///v7/0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA/Pz/rfz8///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz///z8
+        ///8/P///Pz///z8///8/P//+/v/RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD9/f9t/Pz///z8///8/P///Pz///z8///8/P///Pz///z8
+        ///8/P///Pz///z8///8/P///Pz///z8///7+/+M////AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPn5/y38/P///Pz///z8///8/P///Pz///z8
+        ///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz///z8///8/P+s////CQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////Hvz8///8/P///Pz///z8
+        ///8/P///Pz///z8///7+//a/Pz/lPz8//38/P///Pz///z8///8/P///Pz///z8///8/P+kAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wH8/P+1/Pz///z8
+        ///8/P///Pz///z8///8/P///Pz//vr6/y8AAAAA+/v/2Pz8///8/P///Pz///z8///8/P///Pz///z8
+        ///6+v84AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/f3/dPz8
+        ///8/P///Pz///z8///8/P///Pz///z8///8/P+tAAAAAPr6/zj8/P///Pz///z8///8/P///Pz///z8
+        ///8/P///Pz///v7/44AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPr6
+        /zf8/P/6/Pz///z8///8/P///Pz///z8///8/P///Pz//vr6/y8AAAAA/Pz/uPz8///8/P///Pz///z8
+        ///8/P///Pz///z8///8/P///Pz/sQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD///8Q/Pz/3vz8///8/P///Pz///z8///8/P///Pz///z8///8/P+tAAAAAPr6/zj8/P///Pz///z8
+        ///8/P///Pz///z8///8/P///Pz///z8///8/P+5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAPz8/638/P///Pz///z8///8/P///Pz///z8///8/P///Pz//vr6/y8AAAAA/Pz/uPz8
+        ///8/P///Pz///z8///8/P///Pz///v7/9f8/P+f/Pz/wPz8/7kAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD9/f9r/Pz///z8///8/P///Pz///z8///8/P///Pz///z8///8/P+uAAAAAPr6
+        /zj8/P///Pz///z8///8/P///Pz//vz8/7X7+/9DAAAAAAAAAAAAAAAA////JgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA+fn/Lfz8//b8/P///Pz///z8///8/P///Pz///z8///8/P///Pz//vr6
+        /y8AAAAA/Pz/uPz8///8/P///Pz/+Pz8/6L5+f8rAAAAAAAAAAD///8j/f3/ef///yUAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wz7+//X/Pz///z8///8/P///Pz///z8///8/P///Pz///z8
+        ///8/P+tAAAAAPr6/zj8/P///Pz/6fv7/4D///8UAAAAAAAAAAAAAAAA/Pz/mfz8//38/P//+/v/2P//
+        /wkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/Pz/pPz8///8/P///Pz///z8///8/P/n/Pz/q/z8
+        /6r8/P+q/Pz/qvn5/y0AAAAA/f3/a/z8/2D///8HAAAAAP///wX5+f8sAAAAAAAAAAD7+//a/Pz///z8
+        ///8/P//+/v/jAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPr6/zP8/P///Pz///z8///8/P///Pz///r6
+        /zQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD9/f9w/Pz/4/z8///9/f95AAAAAPv7
+        /0L8/P/+/Pz///z8///8/P/9+/v/PAAAAAAAAAAAAAAAAAAAAAAAAAAA////Dfz8/+P8/P///Pz///z8
+        ///8/P///Pz/rP39/2b9/f9m/f3/Zv39/2b9/f9m/f3/Zvr6/zMAAAAA////Hfz8///8/P///Pz///z8
+        //n5+f8tAAAAAPz8/5j8/P///Pz///z8///7+//Z////CQAAAAAAAAAAAAAAAAAAAAAAAAAA/Pz/Sfz8
+        ///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz/8////yEAAAAA/Pz/qvz8
+        ///8/P///Pz///39/87///8F////Dfz8/+D8/P///Pz///z8///7+/86AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/Pz/nfz8///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz///z8///8/P///f3/ZwAA
+        AAD///8U/Pz/6Pz8///8/P///Pz///39/3sAAAAA+/v/RPz8//78/P/z/f3/bAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD///8P/Pz/4/z8///8/P///Pz///z8///8/P///Pz///z8///8/P///Pz/5/39
+        /3D///8FAAAAAAAAAAD8/P9U/Pz///z8///8/P///Pz/+fn5/ywAAAAA+vr/Mv///xkAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7+/9E/Pz//vz8///8/P///Pz///z8///8/P///Pz/6v39
+        /3f///8KAAAAAP///wz9/f92////IQAAAAD8/P+p/Pz///z8///8/P//+/v/hwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8/P+e/Pz///z8///8/P///Pz/6v39
+        /3f///8KAAAAAP///wv9/f9v/Pz/5/z8///8/P++////Af///xX8/P/p/Pz///z8/6n///8TAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///w/7+//Z/Pz/5/39
+        /3D///8JAAAAAAAAAAAAAAAA/Pz/lfz8///8/P///Pz///z8///9/f9qAAAAAP///yP7+/86AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+        /wb///8CAAAAAP///wz9/f92/Pz/r////wL///8S/Pz/5vz8///8/P///Pz///39/9MAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP///wv9/f92/Pz/6vz8///8/P///f3/cAAAAAD8/P9O/Pz///z8///8/P/c+/v/PAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////D/z8/+L8/P///Pz///z8///8/P/1////JQAAAAD9/f9w/f3/ff//
+        /woAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+/v/SPz8//78/P///Pz///z8///8/P+sAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/Pz/nfz8///8/P///Pz/+Pz8
+        /2MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8P/f3/zvz8
+        /77///8pAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA/wAAf/8AAH//AAB//wAAf/8AAH//gAB//4AAP/+AAB//gAAf/wAgD/8A
+        QA/+AEAP/ACAD/wAgA/4AQDv8AEDH+ACDg/gAiYPwH/CB8AAgQPgAEAD8ABAh/AAYE/4ARB//AQAf/wc
+        Cf/+QA///wIP//8BH///gf///8H////D//8=
 </value>
   </data>
   <metadata name="siticoneShadowForm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

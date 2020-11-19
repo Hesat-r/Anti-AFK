@@ -225,7 +225,7 @@ namespace Auth.GG_Winform_Example
                                         Process.GetCurrentProcess().Kill();
                                     }
                                 }
-                                if (ApplicationSettings.Version != "1.5")
+                                if (ApplicationSettings.Version != "1.8")
                                 {
                                     notificationManager.Show(new NotificationContent
                                     {
